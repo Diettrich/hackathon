@@ -7,10 +7,13 @@
 
 # testing
 /coverage
+/cypress/videos
+/cypress/downloads
 
 # next.js
 /.next/
 /out/
+.swc
 
 # production
 /build
@@ -33,4 +36,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts

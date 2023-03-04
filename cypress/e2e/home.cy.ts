@@ -1,0 +1,3 @@
+// home.cy.ts
+
+export {};
