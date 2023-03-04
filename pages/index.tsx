@@ -1,16 +1,13 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
-import { PlayerProps } from "../components/Card/types";
 import PaginationBar from "../components/Pagination";
-import { PaginationBarProps } from "../components/Pagination/types";
 
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import { Player } from "./api/db/data";
 import Card from "../components/Card";
-import { useRouter } from "next/router";
+
+import styles from "../styles/Home.module.scss";
 
 type HomeProps = {
   players: Player[];
@@ -18,11 +15,7 @@ type HomeProps = {
   currentPage: number;
 };
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
-
 const Home: React.FC<HomeProps> = ({ players, totalPages, currentPage }) => {
-  const router = useRouter();
-
   const [total, setTotal] = useState(totalPages);
   const [myPlayers, setPlayers] = useState(players || []);
   const [currentP, setCurrentP] = useState(1);
