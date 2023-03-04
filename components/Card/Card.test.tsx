@@ -41,4 +41,9 @@ describe("Card component", () => {
       expect(container).toHaveStyle("opacity: 1");
     }, 1000);
   });
+
+  test("matches snapshot", () => {
+    const { container } = render(<Card {...props} />);
+    expect(container).toMatchSnapshot();
+  });
 });

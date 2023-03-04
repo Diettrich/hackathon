@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component matches snapshot 1`] = `
+<div>
+  <div
+    class="container"
+    data-testid="card-container"
+    style="opacity: 0;"
+  >
+    <div
+      class="pictureContainer"
+    >
+      <img
+        alt="John Doe"
+        class="picture"
+        data-nimg="1"
+        data-testid="card-picture"
+        decoding="async"
+        height="222"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fexample.com%2Fimage.jpg&w=640&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fimage.jpg&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fimage.jpg&w=640&q=75 2x"
+        style="color: transparent;"
+        width="300"
+      />
+    </div>
+    <div
+      class="nameContainer"
+    >
+      <h2
+        class="name"
+        data-testid="card-name"
+      >
+        John Doe
+      </h2>
+    </div>
+    <div
+      class="detailsContainer"
+    >
+      <div
+        class="goal"
+        data-testid="card-goal"
+      >
+        <span
+          class="label"
+        >
+          Goal: 
+        </span>
+        <span
+          class="value"
+        >
+          5000 $
+        </span>
+      </div>
+      <div
+        class="salary"
+        data-testid="card-salary"
+      >
+        <span
+          class="label"
+        >
+          Salary: 
+        </span>
+        <span
+          class="value"
+        >
+          2500 $
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
