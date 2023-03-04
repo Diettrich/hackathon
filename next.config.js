@@ -10,6 +10,11 @@ const nextConfig = {
       },
     ],
   },
+  basePath: "",
+
+  images: {
+    domains: ["upload.wikimedia.org", "img.a.transfermarkt.technology"],
+  },
 };
 
 module.exports = nextConfig;
